@@ -6,7 +6,7 @@
 
 ## Equipe
 
-Nome Completo 1 (Matrícula 12345)
+João Paulo Alves Brasileiro (Matrícula - 2313688)
 
 Nome Completo 2 (Matrícula 67890)
 
