@@ -7,19 +7,26 @@ public class main {
         // Criando um objeto "meuCarro" da classe Carro
         Carro meuCarro = new Carro("Toyota", "Corolla", 2023, motor);
 
-
+        
 
         // Rodando o carro por 100 quilômetros
         meuCarro.rodar(100);
 
         // Obtendo a quilometragem atual e imprimindo-a
-        System.out.println("------------Carro Passeio-----------");
+        System.out.println("------------Carro-----------");
         meuCarro.ligarCarro();
         System.out.println("************");
         System.out.println("Marca: " + meuCarro.obterMarca());
         System.out.println("Modelo: " + meuCarro.obterModelo());
         System.out.println("Ano: " + meuCarro.obterAno());
         System.out.println("Quilometragem atual: " + meuCarro.obterQuilometragem()+"\n");
+
+        // Criando um objeto "carroPasseio" da classe CarroPasseio
+
+        Motor motorCarroPasseio = new Motor("Flex", 200);
+        CarroPasseio carroPasseio = new CarroPasseio("Fiat", "Siena", 2023, 200,motorCarroPasseio);
+
+        carroPasseio.rodar(60);
 
         // Criando um objeto "carroEsportivo" da classe CarroEsportivo
         Motor motorCarroEsportivo = new Motor("Gasolina", 350.0);
