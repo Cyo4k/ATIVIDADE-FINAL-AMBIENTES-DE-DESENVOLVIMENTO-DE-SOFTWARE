@@ -8,7 +8,7 @@
 
 João Paulo Alves Brasileiro (Matrícula - 2313688)
 
-Gabriel Barboza  (Matrícula - 2315413)
+Gabriel Barboza Lima (Matrícula - 2315413)
 
 Nome Completo 3 (Matrícula 13579)
 
