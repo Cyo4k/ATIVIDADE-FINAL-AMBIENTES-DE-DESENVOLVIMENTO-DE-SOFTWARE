@@ -6,17 +6,15 @@
 
 ## Equipe
 
-João Paulo Alves Brasileiro (Matrícula - 2313688)
-
 Gabriel Barboza Lima (Matrícula - 2315413)
 
-Nome Completo 3 (Matrícula 13579)
+João Paulo Alves Brasileiro (Matrícula - 2313688)
 
-Nome Completo 4 (Matrícula 24680)
+Natanael Barboza Lima (Matrícula - 2319722)
+
+Vanessa Gomes da Rocha (Matrícula - 2317452)
 
 Victória Nogueira Marques (Matrícula - 2317810)
-
-Nome Completo 6 (Matrícula 86420)
 
 
 ## Configuração do Ambiente de Desenvolvimento
