@@ -21,7 +21,7 @@ public class main {
         System.out.println("Ano: " + meuCarro.obterAno());
         System.out.println("Quilometragem atual: " + meuCarro.obterQuilometragem()+"\n");
 
-        // Criando um objeto "carroPasseio" da classe CarroPasseio
+        //Criando um objeto "carroPasseio" da classe CarroPasseio
 
         Motor motorCarroPasseio = new Motor("Flex", 200);
         CarroPasseio carroPasseio = new CarroPasseio("Fiat", "Siena", 2023, 200,motorCarroPasseio);
