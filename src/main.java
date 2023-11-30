@@ -1,47 +1,48 @@
 public class main {
     public static void main(String[] args) {
-        Motor motor = new Motor("Gasolina", 200.0);
+        // 1° Chamada, Informações do carro
 
+        System.out.println("--- 1° Chamada, Informações do carro ---");
+        Carro meuCarro = new Carro();
+        meuCarro.setCarroInfo("Toyota", "Corolla", 2022);
+        System.out.println("\n" + meuCarro + "\n");
 
-
-        // Criando um objeto "meuCarro" da classe Carro
-        Carro meuCarro = new Carro("Toyota", "Corolla", 2023, motor);
-
-        
-
-        // Rodando o carro por 100 quilômetros
+        // 2° Chamada, Quilometragem do carro
+        System.out.println("--- 2° Chamada, Quilometragem do carro ---");
         meuCarro.rodar(100);
+        meuCarro.rodar(-100);
+        meuCarro.rodar(50);
+        meuCarro.rodar(73);
+        meuCarro.rodar(122);
+        meuCarro.rodar(-3);
+        System.out.println();
+        System.out.println("Quilometragem: " + meuCarro.getQuilometragem() + "\n");
 
-        // Obtendo a quilometragem atual e imprimindo-a
-        System.out.println("------------Carro-----------");
-        meuCarro.ligarCarro();
-        System.out.println("************");
-        System.out.println("Marca: " + meuCarro.obterMarca());
-        System.out.println("Modelo: " + meuCarro.obterModelo());
-        System.out.println("Ano: " + meuCarro.obterAno());
-        System.out.println("Quilometragem atual: " + meuCarro.obterQuilometragem()+"\n");
+        // 3° Chamada, Acelerando o carro Esportivo
+        System.out.println("--- 3° Chamada, Acelerando o carro esportivo ---");
+        CarroEsportivo meuCarroEsportivo = new CarroEsportivo();
+        meuCarroEsportivo.acelerar();
+        meuCarroEsportivo.setCarroEsportivo("Ferrari", "488 GBT", 2023);
+        meuCarroEsportivo.setVelocidadeMaxima(330);
+        System.out.println( meuCarroEsportivo );
+        System.out.println();
 
-        //Criando um objeto "carroPasseio" da classe CarroPasseio
+        // 4° Chamada, Potencia do Motor
+        System.out.println("--- 4° Chamada, Potencia do Motor ---");
+        Motor motorCarro = new Motor("V8", 500);
+        Carro meuCarroComMotor = new Carro();
+        meuCarroComMotor.setCarroInfo("Chevrolet", "Camaro", 2023);
+        meuCarroComMotor.ligar();
+        System.out.println(motorCarro);
+        System.out.println(meuCarroComMotor.toString()+ "\n");
 
-        Motor motorCarroPasseio = new Motor("Flex", 200);
-        CarroPasseio carroPasseio = new CarroPasseio("Fiat", "Siena", 2023, 200,motorCarroPasseio);
-
-        carroPasseio.rodar(60);
-
-        // Criando um objeto "carroEsportivo" da classe CarroEsportivo
-        Motor motorCarroEsportivo = new Motor("Gasolina", 350.0);
-        CarroEsportivo carroEsportivo = new CarroEsportivo("Ferrari", "F40", 2023, 350.0,motorCarroEsportivo);
-
-        carroEsportivo.rodar(100);
-
-
-
-        // Imprimindo todas as informações do carro esportivo usando o método toString sobrescrito
-        System.out.println("------------Carro Esportivo-----------");
-        carroEsportivo.ligarCarro();
-        System.out.println("************");
-        // Acelerando o carro esportivo
-        carroEsportivo.acelerar();
-        System.out.println(carroEsportivo.toString() + "\n");
+        // 5° Chamada, Acelerando o carro de Passeio
+        System.out.println("--- 5° Chamada, Acelerando o carro de Passeio ---");
+        CarroPasseio meuCarroPasseio = new CarroPasseio();
+        meuCarroPasseio.acelerar();
+        meuCarroPasseio.setCarroPasseio("Fiat", "Siena", 2023);
+        meuCarroPasseio.setVelocidadeMaxima(60);
+        System.out.println( meuCarroPasseio );
+        System.out.println();
     }
 }
