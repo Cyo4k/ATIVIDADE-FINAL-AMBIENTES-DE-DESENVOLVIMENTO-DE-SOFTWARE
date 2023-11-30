@@ -1,20 +1,30 @@
 public class CarroEsportivo extends Carro {
-    private double velocidadeMaxima;
-
-    public CarroEsportivo(String marca, String modelo, int ano, double velocidadeMaxima, Motor motor) {
-        super(marca, modelo, ano,motor);
-        this.velocidadeMaxima = velocidadeMaxima;
-
-    }
-
-    // Método para acelerar o carro esportivo
+      public int velocidadeMaxima;
+    public CarroEsportivo() { }
     public void acelerar() {
-        System.out.println("Carro esportivo acelerando! Velocidade máxima: " + velocidadeMaxima);
+        System.out.println("\nAcelerando o Carro Esportivo!\n");
     }
 
+    public void setCarroEsportivo(String marca, String modelo, int ano) {
+        super.setCarroInfo(marca, modelo, ano);
+    }
+
+    public void setVelocidadeMaxima(int velocidadeMaxima) {
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
+    private String getModelo() {
+        return modelo;
+    }
+    private String getMarca() {
+        return marca;
+    }
+
+    private int getAno() {
+        return ano;
+    }
     @Override
     public String toString() {
-        return super.toString() + "\nVelocidade Máxima: " + velocidadeMaxima;
+        return "Marca: " + getMarca() + ", Modelo: " + getModelo() + ", Ano: " + getAno() + ", Velocidade Máxima: " + velocidadeMaxima;
     }
 
 
