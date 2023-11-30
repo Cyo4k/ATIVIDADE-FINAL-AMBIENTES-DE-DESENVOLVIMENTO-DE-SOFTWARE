@@ -1,30 +1,39 @@
 public class CarroEsportivo extends Carro {
-      public int velocidadeMaxima;
-    public CarroEsportivo() { }
-    public void acelerar() {
-        System.out.println("\nAcelerando o Carro Esportivo!\n");
+    public String marca;
+    public String modelo;
+    public int ano;
+    public int quilometragem;
+    public Motor motor;
+
+    public Carro() { }
+
+    public Carro(String chevrolet, String camaro, int i, Motor motorCarro) {
     }
 
-    public void setCarroEsportivo(String marca, String modelo, int ano) {
-        super.setCarroInfo(marca, modelo, ano);
+    public void setCarroInfo(String marca, String modelo, int ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
     }
 
-    public void setVelocidadeMaxima(int velocidadeMaxima) {
-        this.velocidadeMaxima = velocidadeMaxima;
-    }
-    private String getModelo() {
-        return modelo;
-    }
-    private String getMarca() {
-        return marca;
+    public int rodar(int quilometro) {
+        if (quilometro >= 0) {
+            quilometragem += quilometro;
+        }
+        return quilometragem;
     }
 
-    private int getAno() {
-        return ano;
+    public int getQuilometragem() {
+        return quilometragem;
     }
+
     @Override
     public String toString() {
-        return "Marca: " + getMarca() + ", Modelo: " + getModelo() + ", Ano: " + getAno() + ", Velocidade Máxima: " + velocidadeMaxima;
+        return "Marca: " + marca + "\nModelo: " + modelo + "\nAno: " + ano;
+    }
+
+    public void ligar() {
+        System.out.println("\nLigando o Carro...\n");
     }
 
 
